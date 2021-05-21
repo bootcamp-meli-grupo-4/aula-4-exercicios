@@ -18,7 +18,7 @@ public class MainApplication {
 
         //System.out.println(turma);
 
-        Data data = new Data(31, 12, 2021);
+        Data data = new Data(1, 2, 2020);
         System.out.println(data.ehDataValida());
         System.out.println(data.adicionarUmDia());
         System.out.println(data);
@@ -30,6 +30,73 @@ public class MainApplication {
         System.out.println(data);
         System.out.println(data.adicionarUmDia());
         System.out.println(data);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+
 
     }
 }
