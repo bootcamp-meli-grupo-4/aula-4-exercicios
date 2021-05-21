@@ -7,10 +7,6 @@ public class Senha {
         this.setValor(valor);
     }
 
-    public String getValor() {
-        return valor;
-    }
-
     public void setValor(String valor) {
         Password passwordStrong = new PasswordStrong();
         Password passwordMedia = new PasswordMedia();
