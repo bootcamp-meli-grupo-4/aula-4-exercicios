@@ -1,5 +1,7 @@
 package com.escola;
 
+import exercicio06.Data;
+
 public class MainApplication {
 
     public static void main(String... args) {
@@ -14,6 +16,20 @@ public class MainApplication {
         turma.adicionarDisciplina(matematica, portugues);
         turma.adicionarEstudante(luiz, marcos);
 
-        System.out.println(turma);
+        //System.out.println(turma);
+
+        Data data = new Data(31, 12, 2021);
+        System.out.println(data.ehDataValida());
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+        System.out.println(data.adicionarUmDia());
+        System.out.println(data);
+
     }
 }
