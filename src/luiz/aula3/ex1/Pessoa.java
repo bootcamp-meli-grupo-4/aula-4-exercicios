@@ -40,6 +40,6 @@ public class Pessoa implements Precedente<Pessoa>{
 
     @Override
     public int precedeA(Pessoa a) {
-        return this.cpf.compareTo(a.getCpf());
+        return this.getCpf().length() - a.getCpf().length();
     }
 }
