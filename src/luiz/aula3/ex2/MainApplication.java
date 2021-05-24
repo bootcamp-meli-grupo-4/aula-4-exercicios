@@ -1,12 +1,41 @@
 package luiz.aula3.ex2;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class MainApplication {
     public static void main(String[] args) {
         MyFactory.createInstance();
         testeArrayStringQuickSort();
         testeArrayInteirosQuickSort();
+        testeTempoSorters();
+    }
+
+    static void testeTempoSorters() {
+        Time time = new Time();
+        Integer[] intersToSort = IntStream.iterate(5000, n -> n - 1).limit(5000).boxed().toArray(Integer[]::new);
+        String[] sorters = {"quick", "heap", "bubble"};
+        Arrays.stream(sorters).forEach(sorter -> {
+            time.reset();
+            Sorter sorterAlg = (Sorter) MyFactory.getInstance(sorter);
+            System.out.printf("\n\nIniciando Algoritimo de ordenacao %s \n", sorter);
+            Integer[] toSort = intersToSort.clone();
+            Comparator<Integer> comparator = (o1, o2) -> {
+                if(o1 != null && o2 != null) {
+                    return (Integer)o1 - (Integer)o2;
+                }
+                return 0;
+            };
+
+            time.start();
+            sorterAlg.sort(toSort, comparator);
+            time.end();
+            System.out.printf("Levou %d nanosegundos para organizar o array\n", time.elapsedTime());
+        });
+
+
     }
 
     static void testeArrayInteirosQuickSort() {
@@ -19,7 +48,7 @@ public class MainApplication {
             }
             return 0;
         });
-        Arrays.stream(arrayInteger).forEach(System.out::println);
+        //Arrays.stream(arrayInteger).forEach(System.out::println);
     }
 
     static void testeArrayStringQuickSort() {
@@ -34,6 +63,6 @@ public class MainApplication {
             }
             return 0;
         });
-        Arrays.stream(arrayString).forEach(System.out::println);
+        //Arrays.stream(arrayString).forEach(System.out::println);
     }
 }
