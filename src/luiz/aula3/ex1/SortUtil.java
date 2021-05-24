@@ -12,8 +12,8 @@ public class SortUtil<T> {
 
     }
 
-    private static <T extends Precedente> void swap(int indexOne, int indexTwo, Precedente<T>... arr) {
-        Precedente<T> temp = arr[indexOne];
+    private static <T extends Precedente> void swap(int indexOne, int indexTwo, T... arr) {
+        T temp = arr[indexOne];
         arr[indexOne] = arr[indexTwo];
         arr[indexTwo] = temp;
     }
