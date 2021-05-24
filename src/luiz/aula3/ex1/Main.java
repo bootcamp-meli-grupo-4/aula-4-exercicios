@@ -17,6 +17,7 @@ public class Main {
         celulares[1] = new Celular("ferreira", "123");
         celulares[2] = new Celular("junior", "1");
         SortUtil.sort(celulares);
+
         Arrays.stream(celulares).forEach(System.out::println);
     }
 }
