@@ -1,11 +1,5 @@
 package luiz.aula3.ex1;
 
-import exercicio03.Counter;
-import luiz.aula3.ex1.Celular;
-import luiz.aula3.ex1.Pessoa;
-import luiz.aula3.ex1.Precedente;
-import luiz.aula3.ex1.SortUtil;
-
 import java.util.Arrays;
 
 public class Main {
