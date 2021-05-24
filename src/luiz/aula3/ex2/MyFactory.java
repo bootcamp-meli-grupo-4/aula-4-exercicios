@@ -19,7 +19,7 @@ public class MyFactory {
         FileReader fileReader = new FileReader(path);
         BufferedReader lineReader = new BufferedReader(fileReader);
 
-        String line = null;
+        String line;
         while ((line = lineReader.readLine()) != null) {
             String[] lineSplitted = line.split("=");
             String key = lineSplitted[0];
