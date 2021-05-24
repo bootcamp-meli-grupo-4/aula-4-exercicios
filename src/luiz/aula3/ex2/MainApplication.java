@@ -32,7 +32,7 @@ public class MainApplication {
             time.start();
             sorterAlg.sort(toSort, comparator);
             time.end();
-            System.out.printf("Levou %d nanosegundos para organizar o array\n", time.elapsedTime());
+            System.out.printf("Levou %d ms para organizar o array\n", time.elapsedTime()/1000000);
         });
 
 
