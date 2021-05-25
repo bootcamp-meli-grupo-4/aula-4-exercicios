@@ -1,3 +1,5 @@
+package dakar;
+
 public class Main {
     public static void main(String[] args) {
         Corrida corrida = new Corrida(1000d, 1000d, "Corrida maluca", 4);

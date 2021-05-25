@@ -1,3 +1,5 @@
+package dakar;
+
 public class Moto extends Veiculo{
     public Moto(Double velocidade, Double aceleracao, Double anguloGiro, String placa) {
         super(velocidade, aceleracao, anguloGiro, placa);

@@ -1,3 +1,5 @@
+package dakar;
+
 public class Socorrista<V extends Veiculo>{
     public void socorrer(V veiculo){
         if (veiculo instanceof Carro){
