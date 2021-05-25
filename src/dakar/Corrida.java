@@ -1,3 +1,5 @@
+package dakar;
+
 import java.util.*;
 
 public class Corrida {
